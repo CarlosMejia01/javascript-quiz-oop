@@ -1,5 +1,3 @@
-import { data } from "./data/data.js ";
+import { questions } from "./data/questions.js";
 
-import './models/Question.js';
-
-console.log(data); 
+console.log(questions[0].correctAnswer('word')); 

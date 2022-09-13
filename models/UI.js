@@ -40,4 +40,14 @@ export class UI {
 		const element = document.getElementById("quiz");
 		element.innerHTML = quizEndHtml;
 	}
+
+	/**
+	 *
+	 * @param {number} currentIndex the current index of the quiz
+	 * @param {number} total the total questions
+	 */
+	showProgress(currentIndex, total) {
+		const element = document.getElementById("progress");
+		element.innerHTML = `Question ${currentIndex} of ${total}`;
+	}
 }

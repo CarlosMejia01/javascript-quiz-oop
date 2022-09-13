@@ -31,7 +31,7 @@ export class Quiz {
      */
 	guess(answer) {
 		console.log(answer);
-		if (this.getQuestionIndex().correctAnswer('awdawdawd')) {
+		if (this.getQuestionIndex().correctAnswer(answer)) {
 			this.score++;
 		}
 
